@@ -21,11 +21,11 @@ export default function PlayerList({ players = [], currentPlayerId, myPlayerId, 
                 <div className="player-name"><span>{player.name || 'Player'}</span>{isMe && <span className="you-pill">YOU</span>}{isTurn && <Crown size={14} className="turn-crown" />}</div>
                 <p>{isFinished ? 'Hand revealed' : isTurn ? 'Their turn' : `${count} cards`}</p>
               </div>
-              <div className="mini-hand" aria-label={cardsVisible ? 'Player cards' : 'Cards hidden'}>
+              {/* <div className="mini-hand" aria-label={cardsVisible ? 'Player cards' : 'Cards hidden'}>
                 {Array.from({ length: Math.min(count, 5) }, (_, index) => cardsVisible
                   ? <Card key={index} card={player.cards[index]} small />
                   : <Card key={index} back small />)}
-              </div>
+              </div> */}
             </div>
           );
         })}

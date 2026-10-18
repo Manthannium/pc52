@@ -28,9 +28,10 @@ export default function LandingPage({ onCreate, onJoin, busy, error }) {
 
       <section className="hero">
         <div className="hero-copy">
-          <span className="kicker"><span className="kicker-line" /> MADE WITH 💛 BY MANTHAN PATEL </span>
-          <h1>Your table.<br /><em>Your winning hand.</em></h1>
-          <p className="hero-description">Gather your friends, keep your cards close, and be the first to collect five cards of the same suit.</p>
+          {/* <span className="kicker"><span className="kicker-line" /> MADE WITH 💛 BY MANTHAN PATEL </span> */}
+          <h1>બાજી પત્તા ની રમતો...<br /><em>ખૂબ રમો, મૌજ કરો</em></h1>
+          <p className="hero-description">Made with 💛 by Manthan Patel</p>
+          {/* <p className="hero-description">Gather your friends, keep your cards close, and be the first to collect five cards of the same suit.</p> */}
           <div className="hero-points">
             <span><span className="point-check">✓</span> 2–4 players</span>
             <span><span className="point-check">✓</span> Free Online Real-time Multiplayer Game</span>
@@ -38,7 +39,8 @@ export default function LandingPage({ onCreate, onJoin, busy, error }) {
           <div className="hero-card-art" aria-hidden="true">
             <div className="art-glow" />
             {/* <img className="hero-card hero-card--back" src="/cards/back_cards-07.png" alt="" /> */}
-            <img className="hero-card hero-card--front" src="/cards/QH.png" alt="" />
+            <img className="hero-card hero-card--front" src="/cards/QS.png" alt="" />
+            <img className="hero-card hero-card--back" src="/cards/KH.png" alt="" />
             {/* <div className="art-caption"><span className="art-caption-dot" /> THE NEXT MOVE IS YOURS</div> */}
           </div>
         </div>
@@ -65,7 +67,7 @@ export default function LandingPage({ onCreate, onJoin, busy, error }) {
             <Plus size={18} /> Create a new game <ArrowRight size={17} className="button-arrow" />
           </button>
 
-          <div className="or-divider"><span /><small>OR JOIN ROOM</small><span /></div>
+          <div className="or-divider"><span /><small>OR JOIN TABLE</small><span /></div>
           <form onSubmit={submitJoin}>
             {/* <label className="field-label" htmlFor="game-code">4-CHARACTER ROOM CODE</label> */}
             <label className="field-label" htmlFor="game-code"></label>
