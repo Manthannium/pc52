@@ -6,7 +6,7 @@ export default function Card({
   onClick,
   label,
 }) {
-  const image = back ? '/cards/back_cards-07.png' : `/cards/${card}.png`;
+  const image = back ? '/cards/red_back.png' : `/cards/${card}.png`;
 
   return (
     <button
